@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sakura Sushi | Auténtica Cocina Japonesa</title>
+    <!-- Enlace a los estilos CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Iconos de FontAwesome para el diseño -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- BARRA DE NAVEGACIÓN -->
+    <header class="header">
+        <div class="logo">
+            <h1>SAKURA <span>SUSHI</span></h1>
+        </div>
+        <nav class="navbar">
+            <a href="#inicio">Inicio</a>
+            <a href="#menu">Menú & Precios</a>
+            <a href="#nosotros">Nuestra Tradición</a>
+            <a href="#contacto" class="btn-contacto">Contacto</a>
+        </nav>
+        <div class="menu-toggle" id="mobile-menu">
+            <i class="fas fa-bars"></i>
+        </div>
+    </header>
+
+    <!-- SECCIÓN HERO (INICIO) -->
+    <section id="inicio" class="hero">
+        <div class="hero-content">
+            <h2>El Arte del Sushi Tradicional</h2>
+            <p>Piezas frescas preparadas con la máxima precisión y pasión japonesa.</p>
+            <a href="#menu" class="btn-primary">Ver Menú y Precios</a>
+        </div>
+    </section>
+
+    <!-- SECCIÓN DE MENÚ (TIPOS, PIEZAS Y PRECIOS) -->
+    <section id="menu" class="menu-section">
+        <div class="section-title">
+            <h2>Nuestra Carta</h2>
+            <p>Explora nuestros tipos de rollos, piezas y valores</p>
+        </div>
+
+        <!-- Filtros de Categorías -->
+        <div class="menu-filters">
+            <button class="filter-btn active" data-filter="todos">Todos</button>
+            <button class="filter-btn" data-filter="rolls">Rolls Tradicionales</button>
+            <button class="filter-btn" data-filter="tempura">Tempura & Fritos</button>
+            <button class="filter-btn" data-filter="nigiri">Nigiri & Sashimi</button>
+        </div>
+
+        <!-- Contenedor de la Lista de Productos -->
+        <div class="menu-grid">
+            <!-- Item 1: Sake Ebi Roll -->
+            <div class="menu-card" data-category="rolls">
+                <div class="card-image">
+                    <img src="assets/img/Sake Ebi Roll.webp" alt="Sake Ebi Roll">
+                </div>
+                <div class="card-info">
+                    <h3>Sake Ebi Roll</h3>
+                    <p class="ingredients">Salmón, camarón, queso crema y palta, envuelto en salmón.</p>
+                    <div class="details">
+                        <span class="pieces">10 Piezas</span>
+                        <span class="price">$8.990</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Item 2: Ebi Tempura Acevichado -->
+            <div class="menu-card" data-category="tempura">
+                <div class="card-image">
+                    <img src="assets/img/Ebi Tempura Acevichado.webp" alt="Ebi Tempura Acevichado">
+                </div>
+                <div class="card-info">
+                    <h3>Ebi Tempura Acevichado</h3>
+                    <p class="ingredients">Camarón tempura, palta, cebollín, cubierto en salsa acevichada.</p>
+                    <div class="details">
+                        <span class="pieces">10 Piezas</span>
+                        <span class="price">$9.500</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Item 3: California Roll -->
+            <div class="menu-card" data-category="rolls">
+                <div class="card-image">
+                    <img src="assets/img/California Roll.webp" alt="California Roll">
+                </div>
+                <div class="card-info">
+                    <h3>California Roll</h3>
+                    <p class="ingredients">Kanikama, palta y pepino, envuelto en sésamo tostado o masago.</p>
+                    <div class="details">
+                        <span class="pieces">10 Piezas</span>
+                        <span class="price">$6.990</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Item 4: Maguro Nigiri -->
+            <div class="menu-card" data-category="nigiri">
+                <div class="card-image">
+                    <img src="assets/img/Maguro Nigiri.webp" alt="Maguro Nigiri">
+                </div>
+                <div class="card-info">
+                    <h3>Maguro Nigiri</h3>
+                    <p class="ingredients">Cortes finos de atún fresco sobre base de arroz avinagrado.</p>
+                    <div class="details">
+                        <span class="pieces">5 Piezas</span>
+                        <span class="price">$7.500</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN NOSOTROS -->
+    <section id="nosotros" class="about-section">
+        <div class="about-container">
+            <div class="about-text">
+                <h2>Filosofía Japonesa</h2>
+                <p>En Sakura Sushi honramos las técnicas ancestrales de la cocina japonesa, seleccionando ingredientes frescos de mar y tierra para brindarte una experiencia culinaria inigualable en cada bocado.</p>
+            </div>
+            <div class="about-features">
+                <div class="feature">
+                    <i class="fas fa-fish"></i>
+                    <h4>Pesca Fresca del Día</h4>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-fire"></i>
+                    <h4>Técnicas al Instante</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PIE DE PÁGINA -->
+    <footer id="contacto" class="footer">
+        <div class="footer-content">
+            <h3>Sakura Sushi</h3>
+            <p>Santiago, Chile</p>
+            <p>Teléfono: +56 9 1234 5678</p>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-whatsapp"></i></a>
+                <a href="#"><i class="fab fa-facebook"></i></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Sakura Sushi. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Enlace al archivo JavaScript -->
+    <script src="main.js"></script>
+</body>
+</html>
